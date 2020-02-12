@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles/style.css">
+    </head>
+    <body>
+        <div id="container">
+
+            <div class="flexparent">
+                <div class="label">Texture:</div>
+                <div class="option" id="texturepool">
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="flexparent">
+                <div class="label">x</div>
+                <div class="option">
+                    <input type="range" id="geometry_brushsize" class="slider" min="1" onclick="gui.geometry_change_brushsizex(this);" value="1" max="15" step="1">
+                </div>
+            </div>
+
+            <div class="flexparent">
+                <div class="label">y</div>
+                <div class="option">
+                    <input type="range" id="geometry_brushsize" class="slider" min="1" onclick="gui.geometry_change_brushsizey(this);" value="1" max="15" step="1">
+                </div>
+            </div>
+
+            <div class="flexparent">
+                <div class="label">z</div>
+                <div class="option">
+                    <input type="range" id="geometry_brushsize" class="slider" min="1" onclick="gui.geometry_change_brushsizez(this);" value="1" max="15" step="1">
+                </div>
+            </div>
+
+        </div>
+        <div id="gl"></div>
+        <script src='lib/three/Tween.js'></script>
+        <script src="lib/three/three.min.js"></script>
+        <script src="lib/three/OrbitControls.js"></script>
+        <script src="lib/three/TransformControls.js"></script>
+        <script src="lib/shaders/SSAOShader.js"></script>
+        <script src="lib/shaders/CopyShader.js"></script>
+        <script src="lib/postprocessing/EffectComposer.js"></script>
+        <script src="lib/postprocessing/ShaderPass.js"></script>
+        <script src="lib/postprocessing/SSAOPass.js"></script>
+        <script src="lib/postprocessing/SimplexNoise.js"></script>
+        <script src="lib/data_editor_settings.js"></script>
+        <script src="lib/data_world.js"></script>
+        <script src="lib/class_gui_editor.js"></script>
+        <script src="lib/class_mapper.js"></script>
+        <script src="lib/class_renderer.js"></script>
+        <script src="lib/class_materialloader.js"></script>
+        <script src="lib/class_chunkmanager.js"></script>
+        <script src="lib/class_worldcreator.js"></script>
+        <script src="lib/class_entity.js"></script>
+        <script src="lib/class__main_editor.js"></script>
+    </body>
+</html>
