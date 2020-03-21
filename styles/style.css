@@ -10,9 +10,30 @@ body {
     background-color: #3b3d46;
     font-family: font001;
 }
+
 hr {
     border: 0.5px solid #4b66774a;
 }
+
+.guitool {
+    cursor: pointer;
+    color: inherit;
+    border: 1px solid;
+    margin: 2px 0px 2px 0px;
+}
+
+.guitool.active {
+    color: rgb(255,0,0);
+}
+
+.texturesample {
+    border: 1px solid rgba(0,0,0,0);
+}
+
+.texturesample.active {
+    border: 1px solid rgb(255,0,0);
+}
+
 .slider {
     -webkit-appearance: none;
     outline: none;
@@ -29,6 +50,7 @@ hr {
     background: #4b6677;
     cursor: pointer;
 }
+
 #container {
     position: absolute;
     z-index: 1;
@@ -57,4 +79,8 @@ hr {
     height:32px;
     background-size: 32px 32px;
     float: left;
+}
+
+.hidden {
+    display: none;
 }
